@@ -1,4 +1,4 @@
-#include "holberton1.h"
+#include "holberton.h"
 #include <unistd.h>
 /**
  * _putchar - writes the character c to stdout
@@ -49,7 +49,7 @@ void print_alphabet_x10(void)
  * 0 otherwise.
  */
 int _islower(int c)
-{	
+{
 	if (c >= 97 && c <= 122)
 		return (1);
 	else
