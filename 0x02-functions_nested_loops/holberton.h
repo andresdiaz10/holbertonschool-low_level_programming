@@ -48,4 +48,15 @@ int print_sign(int n);
  * Return: absolute value of n
  */
 int _abs(int n);
+/**
+ * print_last_digit - Print the last digit of a number
+ * @n: Number
+ *
+ * Return: the value of the last digit.
+ */
+int print_last_digit(int n);
+/**
+ * jack_bauer - Print every minute of the day
+ */
+void jack_bauer(void);
 #endif
