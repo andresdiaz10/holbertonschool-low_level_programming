@@ -54,7 +54,7 @@ int _abs(int n);
  *
  * Return: the value of the last digit.
  */
-int print_last_digit(int32_t n);
+int print_last_digit(int n);
 /**
  * jack_bauer - Print every minute of the day
  */
