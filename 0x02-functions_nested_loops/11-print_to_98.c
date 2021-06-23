@@ -16,7 +16,7 @@ void print_to_98(int n)
 		}
 		if (aux == 98)
 		{
-			printf("%d", aux);
+			printf("%d\n", aux);
 		}
 	}
 	else
@@ -27,7 +27,7 @@ void print_to_98(int n)
 		}
 		if (aux == 98)
 		{
-			printf("%d", aux);
+			printf("%d\n", aux);
 		}
 	}
 }
