@@ -24,4 +24,21 @@ void print_alphabet_x10(void);
  * 0 otherwis.
  */
 int _islower(int c);
+/**
+ * _isalpha - Checks for lower - upper case character
+ * @c: Character to check
+ *
+ * Return: 1 if c is lower upper case character.
+ * 0 otherwise.
+ */
+int _isalpha(int c);
+/**
+ * print_sign - Checks the sign of a number
+ * @n: Number to check
+ *
+ * Return: 1 and print + if n is greater than zero.
+ * 0 and prints 0 if n is zero.
+ * otherwise returns -1 and prints -
+ */
+int print_sign(int n);
 #endif
