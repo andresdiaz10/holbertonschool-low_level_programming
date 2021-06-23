@@ -12,22 +12,22 @@ void print_to_98(int n)
 	{
 		for (aux = n ; aux > 97 ; aux--)
 		{
-			printf("%d, ", n);
-			if (aux == 98)
-			{
-				printf("%d", aux);
-			}
+			printf("%d, ", aux);
+		}
+		if (aux == 98)
+		{
+			printf("%d", aux);
 		}
 	}
 	else
 	{
-		for (aux = n ; aux < 99 ; aux++)
+		for (aux = n ; aux < 98 ; aux++)
 		{
 			printf("%d, ", aux);
-			if (aux == 98)
-			{
-				printf("%d", aux);
-			}
+		}
+		if (aux == 98)
+		{
+			printf("%d", aux);
 		}
 	}
 }
