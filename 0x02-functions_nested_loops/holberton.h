@@ -59,4 +59,21 @@ int print_last_digit(int n);
  * jack_bauer - Print every minute of the day
  */
 void jack_bauer(void);
+/**
+ * times_table - asd
+ */
+void times_table(void);
+/**
+ * add - asd
+ * @a: assd
+ * @b: asdddf
+ *
+ * Return: asddd
+ */
+int add(int a, int b);
+/**
+ * print_to_98 - asdd
+ * @n: - asdds
+ */
+void print_to_98(int n);
 #endif
