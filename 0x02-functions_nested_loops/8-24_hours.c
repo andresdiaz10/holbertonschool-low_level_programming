@@ -15,7 +15,7 @@ void jack_bauer(void)
 			_putchar(hora % 10 + '0');
 			_putchar(':');
 			_putchar(minuto / 10 + '0');
-			_putchar(minuto / 10 + '0');
+			_putchar(minuto % 10 + '0');
 			_putchar('\n');
 			if (minuto == 59)
 			{
