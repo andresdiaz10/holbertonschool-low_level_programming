@@ -8,12 +8,12 @@
  */
 int print_last_digit(int n)
 {
-	if (n == INIT_MIN)
+	if (n == INT_MIN)
 	{
 		_putchar('8');
 		return (8);
 	}
-	else if (n < 0 && n != INIT_MIN)
+	else if (n < 0 && n != INT_MIN)
 	{
 		n = n * -1;
 	}
