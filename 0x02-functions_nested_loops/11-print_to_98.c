@@ -10,7 +10,7 @@ void print_to_98(int n)
 
 	if (n > 98)
 	{
-		for (aux = n ; aux > 98 ; aux--)
+		for (aux = n ; aux >= 99 ; aux--)
 		{
 			printf("%d, ", aux);
 		}
@@ -21,7 +21,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (aux = n ; aux < 98 ; aux++)
+		for (aux = n ; aux <= 97 ; aux++)
 		{
 			printf("%d, ", aux);
 		}
