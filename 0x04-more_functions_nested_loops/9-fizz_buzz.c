@@ -1,9 +1,18 @@
 #include <stdio.h>
+void fizz_buzz(void);
 /**
  * main - Print fizz buzz xd
  * Return: 0 always
  */
 int main(void)
+{
+	fizz_buzz();
+	return (0);
+}
+/**
+ * fizz_buzz - Fizz buzz
+ */
+void fizz_buzz(void)
 {
 	int i;
 
@@ -27,5 +36,4 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return (0);
 }
