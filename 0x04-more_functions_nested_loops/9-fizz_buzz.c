@@ -1,5 +1,5 @@
 #include <stdio.h>
-void fizz_buzz(void);
+#include "holberton.h"
 /**
  * main - Print fizz buzz xd
  * Return: 0 always
