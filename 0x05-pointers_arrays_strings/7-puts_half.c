@@ -13,6 +13,7 @@ void puts_half(char *str)
 	{
 		size++;
 	}
+	size--;
 	if (size % 2 != 0)
 	{
 		half_size = (size - 1) / 2;
