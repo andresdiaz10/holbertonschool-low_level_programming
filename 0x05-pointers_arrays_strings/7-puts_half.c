@@ -13,8 +13,15 @@ void puts_half(char *str)
 	{
 		size++;
 	}
-	half_size = (size - 1) / 2;
-	for (i = half_size ; i <= size ; i++)
+	if (size % 2 != 0)
+	{
+		half_size = (size - 1) / 2;
+	}
+	else
+	{
+		half_size = size / 2;
+	}
+	for (i = half_size ; i < size ; i++)
 	{
 		_putchar(*(str + i));
 	}
