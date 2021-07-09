@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * main - Print the name of the program
  * @argc: Number of command line arguments
@@ -13,8 +12,7 @@ int main(int argc, char *argv[])
 	(void)argv;
 	if (argc == 1 || argc >= 4)
 		printf("%s\n", "Error");
-	else if (strspn(argv[1], "0123456789") == strlen(argv[1]) &&
-			strspn(argv[2], "0123456789") == strlen(argv[2]))
+	else
 	{
 		int x = atoi(argv[1]);
 		int y = atoi(argv[2]);
@@ -22,7 +20,5 @@ int main(int argc, char *argv[])
 
 		printf("%i\n", result);
 	}
-	else
-		printf("%s\n", "Error");
 	return (0);
 }
