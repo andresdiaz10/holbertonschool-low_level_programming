@@ -11,12 +11,14 @@ int main(int argc, char *argv[])
 {
 	(void)argv;
 	if (argc == 1 || argc >= 4)
-	{
 		printf("%s\n", "Error");
-	}
 	else
 	{
-	    printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
+		int x = atoi(argv[1]);
+		int y = atoi(argv[2]);
+		int result = x * y;
+
+		printf("%i\n", result);
 	}
 	return (0);
 }
