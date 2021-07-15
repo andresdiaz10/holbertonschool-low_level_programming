@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 		s1 = "\0";
 	if (!(s2))
 		s2 = "\0";
-	arr = (char *)malloc((string_size(s1) + string_size(s2)) * sizeof(char));
+	arr = (char *)malloc((string_size(s1) + string_size(s2) - 1) * sizeof(char));
 	if (arr)
 	{
 		c = 0;
