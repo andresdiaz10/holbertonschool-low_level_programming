@@ -14,4 +14,6 @@ typedef struct dog
 	float age;
 	char *owner;
 } dog;
+typedef dog dog_t;
+dog_t *new_Bud(char *name, int age, char *owner);
 #endif
