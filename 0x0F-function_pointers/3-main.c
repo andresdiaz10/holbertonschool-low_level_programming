@@ -7,7 +7,7 @@
  * @argc: number of the arguments in the terminal
  * @argv: pointer of the arguments
  *
- * Return: 0 
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -35,5 +35,5 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	printf("%d\n", get_op_func(op)(a, b));
-	return(0);
+	return (0);
 }
