@@ -21,3 +21,11 @@ Write a program that performs simple operations.
 This file should contain all the function prototypes and data structures used by the program.
 #### > [**3-op_functions.c**](https://github.com/andresdiaz10/holbertonschool-low_level_programming/blob/main/0x0F-function_pointers/3-op_functions.c)
 This file should contain the definition for all calculation functions.
+#### > [**3-get_op_func.c**](https://github.com/andresdiaz10/holbertonschool-low_level_programming/blob/main/0x0F-function_pointers/3-get_op_func.c)
+This file should contain the function that selects the correct function to perform the operation asked by the user.
+#### > [**3-main.c**](https://github.com/andresdiaz10/holbertonschool-low_level_programming/blob/main/0x0F-function_pointers/3-main.c)
+- Print the mathematical operation
+- Usage:  `./out a operator b`
+- if the number of arguments is wrong, print Error, followed by a new line, and exit with the status 98
+- if the operator is none of the above, print Error, followed by a new line, and exit with the status 99
+- if the user tries to divide (/ or %) by 0, print Error, followed by a new line, and exit with the status 100
