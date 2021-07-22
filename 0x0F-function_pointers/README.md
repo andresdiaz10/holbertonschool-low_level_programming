@@ -19,3 +19,5 @@ Write a function that searches for an integer.
 Write a program that performs simple operations.
 #### > [**3-calc.h**](https://github.com/andresdiaz10/holbertonschool-low_level_programming/blob/main/0x0F-function_pointers/3-calc.h)
 This file should contain all the function prototypes and data structures used by the program.
+#### > [**3-op_functions.c**](https://github.com/andresdiaz10/holbertonschool-low_level_programming/blob/main/0x0F-function_pointers/3-op_functions.c)
+This file should contain the definition for all calculation functions.
