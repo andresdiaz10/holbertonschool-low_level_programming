@@ -1,47 +1,73 @@
 #include "holberton.h"
 
 /**
- * _printf - formated string
- * @str: string to print
- *
- * Return: number of character printed
+ * write_printf - print in the stdout and free memory
+ * @args: list argument
+ * @strout: buffer struct, string to print
  */
-
-int _printf(const char *str, ...)
+void write_printf(va_list args, buffer_t *strout)
 {
-	va_list vl;
-	int i = 0, j = 0;
-	char buff[100] = {0};
-	char *str_arg;
+	write(1, strout->begin, strout->size);
+	va_end(args);
+	free_buff(strout);
+}
 
-	va_start(vl, str);
-	while (str && str[i])
+/**
+ * read_printf - move into string and search the format
+ * @format: string to print
+ * @args: list arguments
+ * @strout: buffer struct, store the format
+ *
+ * Return: number of char in strout
+ */
+int read_printf(const char *format, va_list args, buffer_t *strout)
+{
+	int i;
+	int numc = 0;
+	char tmp;
+	unsigned int (*f)(va_list, buffer_t *);
+
+	for (i = 0 ; *(format + i) ; i++)
 	{
-		if (str[i] == '%')
+		if (*(format + i) == '%')
 		{
-			i++;
-			switch (str[i])
+			tmp = 0;
+			f = get_format(format + i + tmp + 1);
+			if ((f))
 			{
-				case 'c':
-				buff[j] = (char)va_arg(vl, int);
-				j++;
-				break;
-
-				case 's':
-				str_arg = va_arg(vl, char*);
-				_strcpy(&buff[j], str_arg);
-				j += _strlen(str_arg);
+				i += tmp + 1;
+				numc += f(args, strout);
+				continue;
+			}
+			else if (*(format + i + tmp + 1) == '\0')
+			{
+				numc = -1;
 				break;
 			}
 		}
-		else
-		{
-			buff[j] = str[i];
-			j++;
-		}
-		i++;
+		numc += _memcpy(strout, (format + i), 1);
 	}
-	write(1, buff, j);
-	va_end(vl);
-	return (j);
+	write_printf(args, strout);
+	return (numc);
+}
+/**
+ * _printf - init the buffer and format
+ * @format: string to print
+ *
+ * Return: number of char to be printed
+ */
+int _printf(const char *format, ...)
+{
+	int numc;
+	buffer_t *strout;
+	va_list args;
+
+	if (!(format))
+		return (-1);
+	strout = init_buff();
+	if (!(strout))
+		return (-1);
+	va_start(args, format);
+	numc = read_printf(format, args, strout);
+	return (numc);
 }
