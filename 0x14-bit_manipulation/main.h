@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H
-#define _HOLBERTON_H
+#ifndef _MAIN_H
+#define _MAIN_H
 
 #include <unistd.h>
 
@@ -17,4 +17,4 @@ int clear_bit(unsigned long int *n, unsigned int index);
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
-#endif /* _HOLBERTON_H */
+#endif /* _MAIN_H */
