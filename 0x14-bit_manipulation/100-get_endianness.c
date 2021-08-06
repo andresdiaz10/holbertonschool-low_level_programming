@@ -9,7 +9,7 @@
 
 int get_endianness(void)
 {
-	int aux = 1;
+	int aux = 69;
 	char *endian = (void *)&aux;
 
 	if (*endian == 1)
