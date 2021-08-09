@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_file - function that appends text at the end of a file
+ * append_text_to_file - function that appends text at the end of a file
  * @filename: name of the file to create
  * @text_content: string to write to the file
  *
@@ -9,7 +9,7 @@
  *	otherwise 1
  */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	size_t text_size = 0;
 	ssize_t open_b;
