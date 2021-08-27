@@ -9,7 +9,7 @@
  * Return: a
  */
 
-void *_memcpy(void *dest, const void *src, size_t n)
+char *_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned int index;
 	unsigned char *destination = dest;
